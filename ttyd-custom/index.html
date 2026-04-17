@@ -173,6 +173,11 @@
     
   }, 300);
   
+  // Block browser default context menu so xterm right-click works
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+  
 })();
 </script>
 <style>
